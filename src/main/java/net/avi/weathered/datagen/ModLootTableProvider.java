@@ -15,5 +15,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.LIMESTONE); // limestone will now drop itself
+        addDrop(ModBlocks.LIMESTONE_STAIRS);
+        addDrop(ModBlocks.LIMESTONE_SLAB, slabDrops(ModBlocks.LIMESTONE_SLAB));
+        addDrop(ModBlocks.LIMESTONE_WALL);
     }
 }

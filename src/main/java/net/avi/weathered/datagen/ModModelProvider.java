@@ -15,12 +15,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIMESTONE); // generates the blockstates model, block model, and item model
+        BlockStateModelGenerator.BlockTexturePool limestonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE); // generates the blockstates model, block model, and item model
+
+        limestonePool.stairs(ModBlocks.LIMESTONE_STAIRS);
+        limestonePool.slab(ModBlocks.LIMESTONE_SLAB);
+        limestonePool.wall(ModBlocks.LIMESTONE_WALL);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.TOME, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CLEAVER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLEAVER, Models.HANDHELD);
     }
 }

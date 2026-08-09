@@ -2,8 +2,7 @@ package net.avi.weathered.block;
 
 import net.avi.weathered.Weathered;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -20,8 +19,25 @@ public class ModBlocks {
                     .strength(0.75f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
-            )
-    );
+    ));
+
+    public static final Block LIMESTONE_STAIRS = registerBlock("limestone_stairs",
+            new StairsBlock(ModBlocks.LIMESTONE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .strength(0.75f).requiresTool().sounds(BlockSoundGroup.NETHER_BRICKS)
+    ));
+
+    public static final Block LIMESTONE_SLAB = registerBlock("limestone_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(0.75f).requiresTool().sounds(BlockSoundGroup.NETHER_BRICKS)
+    ));
+
+    public static final Block LIMESTONE_WALL = registerBlock("limestone_wall",
+            new WallBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(0.75f).requiresTool().sounds(BlockSoundGroup.NETHER_BRICKS)
+    ));
 
 
     private static Block registerBlock(String name, Block block) {

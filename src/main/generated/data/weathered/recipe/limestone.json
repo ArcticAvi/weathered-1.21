@@ -14,7 +14,7 @@
     "$#"
   ],
   "result": {
-    "id": "weathered:limestone",
-    "count": 4
+    "count": 4,
+    "id": "weathered:limestone"
   }
 }

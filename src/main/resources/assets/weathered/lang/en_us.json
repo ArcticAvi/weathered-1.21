@@ -3,6 +3,9 @@
   "item.weathered.cleaver": "Gilded Cleaver",
 
   "block.weathered.limestone": "Limestone",
+  "block.weathered.limestone_stairs": "Limestone Stairs",
+  "block.weathered.limestone_slab": "Limestone Slab",
+  "block.weathered.limestone_wall": "Limestone Wall",
 
   "itemgroup.weathered.weathered_group": "Weathered",
 

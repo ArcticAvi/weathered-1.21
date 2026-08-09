@@ -16,6 +16,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.LIMESTONE);
+                .add(ModBlocks.LIMESTONE)
+                .add(ModBlocks.LIMESTONE_STAIRS)
+                .add(ModBlocks.LIMESTONE_SLAB)
+                .add(ModBlocks.LIMESTONE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.LIMESTONE_WALL);
     }
 }

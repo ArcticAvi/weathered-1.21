@@ -20,7 +20,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CLEAVER);
                         entries.add(ModItems.TOME);
+
                         entries.add(ModBlocks.LIMESTONE);
+                        entries.add(ModBlocks.LIMESTONE_STAIRS);
+                        entries.add(ModBlocks.LIMESTONE_SLAB);
+                        entries.add(ModBlocks.LIMESTONE_WALL);
                     }).build()
             );
 

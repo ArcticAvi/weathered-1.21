@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "weathered:block/limestone_slab"
+    },
+    "type=double": {
+      "model": "weathered:block/limestone"
+    },
+    "type=top": {
+      "model": "weathered:block/limestone_slab_top"
+    }
+  }
+}

@@ -3,6 +3,7 @@ package net.avi.weathered;
 import net.avi.weathered.datagen.ModBlockTagProvider;
 import net.avi.weathered.datagen.ModLootTableProvider;
 import net.avi.weathered.datagen.ModModelProvider;
+import net.avi.weathered.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -14,5 +15,6 @@ public class WeatheredDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }
