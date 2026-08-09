@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "weathered",
+	"version": "${version}",
+	"name": "Weathered",
+	"description": "A mod that adds new blocks and plants intended for building.",
+	"authors": [
+		"Aviitori"
+	],
+	"contact": {
+		"homepage": "https://avi.net",
+		"sources": "https://github.com/ArcticAvi/weathered-1.21"
+	},
+	"license": "ARR",
+	"icon": "assets/weathered/tome.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.avi.weathered.Weathered"
+		],
+		"fabric-datagen": [
+			"net.avi.weathered.WeatheredDataGenerator"
+		],
+		"client": [
+			"net.avi.weathered.WeatheredClient"
+		]
+	},
+	"mixins": [
+		"weathered.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
