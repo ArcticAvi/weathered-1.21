@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://avi.net",
-		"sources": "https://github.com/ArcticAvi/weathered-1.21"
+		"sources": "https://github.com/ArcticAvi/weathered-1.21.git"
 	},
 	"license": "ARR",
 	"icon": "assets/weathered/tome.png",
