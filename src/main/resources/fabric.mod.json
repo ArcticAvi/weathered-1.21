@@ -12,7 +12,7 @@
 		"sources": "https://github.com/ArcticAvi/weathered-1.21.git"
 	},
 	"license": "ARR",
-	"icon": "assets/weathered/tome.png",
+	"icon": "assets/weathered/item/tome.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

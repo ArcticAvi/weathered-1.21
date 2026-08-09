@@ -1,5 +1,8 @@
 package net.avi.weathered;
 
+import net.avi.weathered.block.ModBlocks;
+import net.avi.weathered.item.ModItemGroups;
+import net.avi.weathered.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -13,7 +16,10 @@ public class Weathered implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {
