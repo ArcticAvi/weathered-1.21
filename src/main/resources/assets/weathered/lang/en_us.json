@@ -1,8 +1,10 @@
 {
-  "item.weathered.tome": "Tome of Earth",
+  "item.weathered.tome": "§eTome of Earth",
   "item.weathered.cleaver": "Gilded Cleaver",
 
   "block.weathered.limestone": "Limestone",
 
-  "itemgroup.weathered.weathered_group": "Weathered"
+  "itemgroup.weathered.weathered_group": "Weathered",
+
+  "tooltip.weathered.tome.tooltip": "§7does nothing lmao"
 }
